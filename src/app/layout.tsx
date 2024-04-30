@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { ClerkProvider } from '@clerk/nextjs'
 import ModalProvider from "@/providers/modal-provider";
 import { Toaster } from "@/components/ui/toaster";
+import LoadingBar from 'react-top-loading-bar';
+import NextTopLoader from 'nextjs-toploader';
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -30,6 +32,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <NextTopLoader />
             <ModalProvider>
         {children}
         <Toaster/>

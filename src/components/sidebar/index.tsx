@@ -25,7 +25,7 @@ const MenuOptions = (props: Props) => {
           className="flex font-bold flex-row "
           href="/"
         >
-          fuzzie.
+          AutoIt
         </Link>
         <TooltipProvider>
           {menuOptions.map((menuItem) => (

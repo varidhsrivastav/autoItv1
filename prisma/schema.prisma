@@ -103,6 +103,16 @@ model Connections {
   slackId          String?
 }
 
+// WIP : model of google resources 
+model googleResource{
+  id       String   @id @default(uuid())
+  status    String  
+  name     String
+  userid String
+  primaryPhoneNumber Int 
+  has_image Boolean 
+
+}
 model Workflows {
   id                String   @id @default(uuid())
   nodes             String?

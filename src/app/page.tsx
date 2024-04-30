@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { clients, products } from '@/lib/constant'
 import { CheckIcon } from 'lucide-react'
 import Image from 'next/image'
+import LoadingBar from 'react-top-loading-bar'
 
 export default function Home() {
   //WIP: remove fault IMAge for home page
