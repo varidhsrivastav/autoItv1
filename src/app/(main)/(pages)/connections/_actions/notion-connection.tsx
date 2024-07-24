@@ -84,6 +84,7 @@ export const onCreateNewPageInDatabase = async (
   })
 
   console.log(databaseId)
+  // WIP: update the notion 
   const response = await notion.pages.create({
     parent: {
       type: 'database_id',
